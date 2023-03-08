@@ -1,0 +1,19 @@
+{
+  "name": "webapi-node",
+  "version": "1.0.0",
+  "description": "dummy webapi",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon -L index.js"
+  },
+  "author": "Markus Seeli",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  }
+}
