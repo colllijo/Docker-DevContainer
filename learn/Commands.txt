@@ -1,0 +1,13 @@
+# Build the image
+
+docker build -t webapi  .     
+
+docker build -t webapi --build-arg Port=4500  .    
+
+# Run the image in production mode
+
+docker run -p 3000:3000 webapi
+
+# Run the image with a volume and nodemon
+
+docker run -p 3000:3000 -v $(pwd):/usr/src/app webapi dev
